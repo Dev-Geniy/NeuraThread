@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="NeuraThread - украинский бренд футуристической одежды, вдохновляющий на индивидуальность и поддерживающий ЗСУ.">
-    <meta name="keywords" content="украинская мода, NeuraThread, футуристическая одежда, киберпанк, благотворительность, ЗСУ">
+    <meta name="description" content="NeuraThread - украинский бренд футуристической одежды с терморегуляцией и голографическими эффектами. Поддерживаем ЗСУ и вдохновляем на индивидуальность!">
+    <meta name="keywords" content="NeuraThread, футуристическая одежда, украинская мода, киберпанк, терморегуляция, ЗСУ">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="NeuraThread - Украинский стиль будущего">
-    <meta property="og:description" content="NeuraThread - одежда для тех, кто творит будущее. Поддерживаем украинскую моду и ЗСУ!">
+    <meta property="og:title" content="NeuraThread - Стиль будущего из Украины">
+    <meta property="og:description" content="NeuraThread создаёт одежду для смелых. Терморегуляция, голография и поддержка ЗСУ — это наш путь!">
     <meta property="og:image" content="https://via.placeholder.com/1200x630?text=NeuraThread">
     <meta property="og:url" content="https://neurathread.example.com">
     <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
         <nav>
             <a href="index.html">Главная</a>
             <a href="shop.html">Магазин</a>
-            <a href="blog.html">Наш блог</a>
+            <a href="blog.html">Блог</a>
             <a href="#partnership">Партнёрство</a>
         </nav>
         <div class="cart-info">
@@ -39,66 +39,83 @@
         <div class="mobile-menu">
             <a href="index.html">Главная</a>
             <a href="shop.html">Магазин</a>
-            <a href="blog.html">Наш блог</a>
+            <a href="blog.html">Блог</a>
             <a href="#partnership">Партнёрство</a>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">NeuraThread — стиль, рождённый в Украине</h1>
-            <p class="hero-text">Мы создаём моду, которая раскрывает вашу индивидуальность и вдохновляет на смелость. Присоединяйтесь к нашей миссии менять мир через стиль!</p>
-            <a href="shop.html" class="cta-button">В магазин!</a>
+            <h1 class="hero-title">NeuraThread — будущее моды начинается здесь</h1>
+            <p class="hero-text">Украинский бренд, вдохновляющий на смелость и уникальность. Одежда с терморегуляцией и голографическими эффектами для тех, кто творит завтра.</p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="cta-button">Открыть магазин</a>
+                <a href="#about" class="cta-button secondary">Узнать больше</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 class="section-title">О NeuraThread</h2>
-        <p class="about-text">NeuraThread — это украинский бренд, созданный страстной командой, чтобы переосмыслить моду. Мы вдохновляем каждого раскрыть свою уникальность через одежду, пропитанную духом свободы и инноваций. От терморегуляции до голографических эффектов — каждый наш дизайн говорит: будь собой, будь смелым, будь украинцем.</p>
+        <h2 class="section-title">Кто мы?</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://i.ibb.co/qYWBdhpf/1-Photoroom.png" alt="NeuraThread Vision">
+            </div>
+            <div class="about-text">
+                <p>NeuraThread — это не просто одежда, это манифест свободы. Мы — украинский бренд, который сочетает инновации и стиль, чтобы вы могли выразить себя. Наши технологии терморегуляции и голографические эффекты делают каждую вещь уникальной, как и вы.</p>
+                <p>Мы гордимся нашей дружной командой и каждым кто сделал вклад, в наш проект на пути к общей целе.</p>
+                <p>Присоединяйтесь к нам, чтобы вместе создавать будущее, мы ценим каждого человека в команде, каждого клиента, и даже если вы просто пришли сюда, просто так, плсмотреть из любопытства, сделайте любое полезное действие, например просто поделитесь ссылкой с друзьями, у нас очень современная одежда для всех, может они захотят обновить стиль, а быть может станут частью нашей команды, ведь это несложно просто написав нам внизу страницы, мы всему научим и будим рады новым талантам!</p>
+            </div>
+        </div>
     </section>
 
     <!-- Featured Products -->
     <section class="featured-products">
-        <h2 class="section-title">Популярные товары</h2>
+        <h2 class="section-title">Наши хиты</h2>
         <div class="swiper featured-swiper">
             <div class="swiper-wrapper" id="featured-products"></div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
+        <a href="shop.html" class="cta-button">Смотреть все товары</a>
     </section>
 
-<!-- Charity Row -->
-<div class="charity-row">
-    <!-- Gratitude Section -->
-    <section class="gratitude">
-        <h2 class="section-title">Спасибо вам, наши звёзды!</h2>
-        <p class="gratitude-text">NeuraThread только начинает свой путь, и каждый ваш выбор — это искра, которая разжигает наше вдохновение. Вы обретаете стиль, эмоции и уверенность, а мы — бесценный опыт и ваши тёплые слова. Вместе мы растём, движемся вперёд и создаём будущее моды. Огромное спасибо нашей невероятной команде и каждому, кто помог запустить этот проект. Вы — наше сердце!</p>
-    </section>
-
-    <!-- Charity ZSU Section -->
-    <section class="charity-zsu">
+    <!-- Charity Section -->
+    <section class="charity">
         <div class="charity-overlay"></div>
-        <h2 class="section-title">Вместе за Украину</h2>
-        <p class="charity-text">NeuraThread — это не только мода, но и ответственность. Мы гордимся тем, что часть нашей прибыли пойдёт на поддержку ЗСУ, которые защищают наши дома и свободу. Скоро мы запустим благотворительные сборы для закупки техники, медицинской помощи и ресурсов для наших героев. Вместе мы сделаем больше!</p>
+        <h2 class="section-title">Мода с миссией</h2>
+        <div class="charity-content">
+            <div class="charity-item">
+                <h3>Поддержка ЗСУ</h3>
+                <p>Часть прибыли от каждой покупки скоро будет направляться официально на помощь ЗСУ — закупку спец. техники для защитs, медикаментов для пострадавших и всех необходимых ресурсов для укрипления наших героев.</p>
+            </div>
+            <div class="charity-item">
+                <h3>Благотворительные проекты</h3>
+                <p>Мы уже помогли детским домам и онкоцентрам. Скоро новые инициативы — следите за обновлениями!</p>
+            </div>
+            <div class="charity-item">
+                <h3>Эко-инициативы</h3>
+                <p>Используем экологичные материалы и работаем над снижением углеродного следа. Мода должна быть ответственной!</p>
+            </div>
+        </div>
     </section>
-
-    <!-- Past Charity Section -->
-    <section class="past-charity">
-        <h2 class="section-title">Наши добрые дела</h2>
-        <p class="past-charity-text">Мы уже оставили след в сердцах. NeuraThread организовывал благотворительные проекты, собирая миллионы для детских домов, онкоцентров и детей с особыми потребностями. Наша миссия — дарить надежду и поддержку тем, кто нуждается в этом больше всего. И это только начало!</p>
-    </section>
-</div>
 
     <!-- Blog Teaser Section -->
     <section class="blog-teaser">
-        <h2 class="section-title">Взгляд в будущее</h2>
-        <div class="blog-grid" id="blog-posts">
-            <!-- Динамически добавленные посты -->
-        </div>
-        <a href="blog.html" class="cta-button blog-cta">Читать все статьи</a>
+        <h2 class="section-title">Наши истории</h2>
+        <div class="blog-grid" id="blog-posts"></div>
+        <a href="blog.html" class="cta-button">Читать блог</a>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership" class="partnership">
+        <h2 class="section-title">Стань частью NeuraThread</h2>
+        <p class="partnership-text">Мы открыты к сотрудничеству с дизайнерами, блогерами и брендами. Напишите нам, чтобы создать что-то невероятное вместе!</p>
+        <a href="mailto:partners@neurathread.com" class="cta-button">Связаться</a>
     </section>
 
     <!-- Footer -->
@@ -106,14 +123,14 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>NeuraThread</h3>
-                <p>Украинский стиль для будущего.</p>
+                <p>Стиль, который меняет мир.</p>
             </div>
             <div class="footer-section">
                 <h3>Навигация</h3>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="shop.html">Магазин</a></li>
-                    <li><a href="blog.html">Наш блог</a></li>
+                    <li><a href="blog.html">Блог</a></li>
                     <li><a href="#partnership">Партнёрство</a></li>
                 </ul>
             </div>
@@ -135,14 +152,14 @@
     <div class="modal cart-modal">
         <button class="modal-close">✕</button>
         <div class="modal-content">
-            <h2>Товары, которые вам понравились</h2>
+            <h2>Ваша корзина</h2>
             <div class="cart-items"></div>
             <div class="cart-total">
                 <span>Итого:</span>
                 <span id="cart-total-price">0$</span>
             </div>
-            <button class="checkout-btn">Оформить заказ сейчас!</button>
-            <p>Завершите оформление и получите товары!</p>
+            <button class="checkout-btn">Оформить заказ</button>
+            <p>Завершите покупку и станьте частью будущего!</p>
         </div>
     </div>
 
