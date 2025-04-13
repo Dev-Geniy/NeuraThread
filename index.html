@@ -1,0 +1,156 @@
+<DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NeuraThread - футуристическая одежда с терморегуляцией и голографическими эффектами. Покупайте куртки, футболки и брюки в нашем магазине!">
+    <meta name="keywords" content="футуристическая одежда, NeuraThread, терморегуляция, голографическая одежда, магазин одежды">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="NeuraThread - Магазин футуристической одежды">
+    <meta property="og:description" content="Покупайте куртки, футболки и брюки с терморегуляцией и голографическими эффектами в NeuraThread!">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=NeuraThread">
+    <meta property="og:url" content="https://neurathread.example.com">
+    <meta property="og:type" content="website">
+    <title>NeuraThread - Магазин</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="purple-theme">
+    <canvas id="webgl-bg"></canvas>
+    <header>
+        <div class="logo">NeuraThread</div>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#shop">Магазин</a>
+            <a href="#blog">Наш блог</a>
+            <a href="#partnership">Партнёрство</a>
+        </nav>
+        <div class="cart-info">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+        <button class="theme-toggle">Тема</button>
+        <div class="hamburger">☰</div>
+        <div class="mobile-menu">
+            <a href="#home">Главная</a>
+            <a href="#shop">Магазин</a>
+            <a href="#blog">Наш блог</a>
+            <a href="#partnership">Партнёрство</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter-panel">
+            <button class="filter-toggle">Фильтры</button>
+            <div class="filters">
+                <button class="filter-btn active" data-section="all">Все</button>
+                <button class="filter-btn" data-section="tshirts-nt">Футболки (NT)</button>
+                <button class="filter-btn" data-section="hoodies-nt">Худи (NT)</button>
+                <button class="filter-btn" data-section="sweatshirts-nt">Свитшоты (NT)</button>
+                <button class="filter-btn" data-section="caps-nt">Кепки (NT)</button>
+                <button class="filter-btn" data-section="other-1">Другое 1</button>
+                <button class="filter-btn" data-section="other-2">Другое 2</button>
+                <button class="filter-btn" data-section="other-3">Другое 3</button>
+                <button class="filter-btn" data-section="other-4">Другое 4</button>
+                <button class="filter-btn" data-price="0-100">До 100$</button>
+                <button class="filter-btn" data-price="100-200">100$-200$</button>
+                <button class="filter-btn" data-price="200+">до 500$</button>
+            </div>
+            <div class="filter-sidebar">
+                <button class="filter-btn active" data-section="all">Все</button>
+                <button class="filter-btn" data-section="tshirts-nt">Футболки (NT)</button>
+                <button class="filter-btn" data-section="hoodies-nt">Худи (NT)</button>
+                <button class="filter-btn" data-section="sweatshirts-nt">Свитшоты (NT)</button>
+                <button class="filter-btn" data-section="caps-nt">Кепки (NT)</button>
+                <button class="filter-btn" data-section="other-1">Другое 1</button>
+                <button class="filter-btn" data-section="other-2">Другое 2</button>
+                <button class="filter-btn" data-section="other-3">Другое 3</button>
+                <button class="filter-btn" data-section="other-4">Другое 4</button>
+                <button class="filter-btn" data-price="0-100">До 100$</button>
+                <button class="filter-btn" data-price="100-200">100$-200$</button>
+                <button class="filter-btn" data-price="200+">200$+</button>
+            </div>
+        </section>
+
+        <section class="product-grid" id="product-grid">
+            <!-- Карточки товаров будут добавлены динамически -->
+        </section>
+    </main>
+
+    <!-- Модальное окно для товара -->
+    <div class="modal product-modal">
+        <button class="modal-close">✕</button>
+        <div class="modal-content">
+            <!-- Слайдер с фотографиями -->
+            <div class="modal-image">
+                <div class="swiper">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- Контент под слайдером -->
+            <div class="modal-details">
+                <div class="modal-details-content">
+                    <div class="modal-column">
+                        <h2 class="modal-title"></h2>
+                        <p class="modal-description"></p>
+                        <table class="size-table">
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                                <th>XL</th>
+                            </tr>
+                            <tr>
+                                <th>XS</th>
+                                <th>XXS</th>
+                                <th>XXL</th>
+                                <th>3XL</th>
+                            </tr>
+                        </table>
+                        <!-- Перемещённый список характеристик -->
+                        <ul class="features-list">
+                            <li><i class="fas fa-shipping-fast"></i> Отправка в день заказа</li>
+                            <li><i class="fas fa-credit-card"></i> Оплата при получении</li>
+                            <li><i class="fas fa-shield-alt"></i> Гарантия 14 дней</li>
+                            <li><i class="fas fa-undo"></i> Бесплатный возврат</li>
+                            <li><i class="fas fa-headset"></i> Поддержка 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="modal-column">
+                        <div class="modal-price"></div>
+                        <button class="add-to-cart-btn modal-cart-btn" data-product-id="">Добавить в корзину!</button>
+                        <p class="modal-order-text">Добавьте товар в корзину и оформите заказ!</p>
+                        <a href="tel:+79991234567" class="modal-phone">+380 (66) 333-03-45</a>
+                        <p class="modal-call-text">Звони сейчас — твой стиль ждет!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для корзины -->
+    <div class="modal cart-modal">
+        <button class="modal-close">✕</button>
+        <div class="modal-content">
+            <h2>Товары которые вам понравились</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <span>Итого:</span>
+                <span id="cart-total-price">0$</span>
+            </div>
+            <button class="checkout-btn">Оформить заказ сейчас!</button>
+          <p>Завершите оформление и получите товары!</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
