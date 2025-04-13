@@ -65,7 +65,7 @@ hamburger.addEventListener('click', () => {
 async function loadProducts() {
     try {
         const response = await fetch('products/products.json');
-        if (!response.ok) throw new Error('Failed to load products');
+        if (!response.ok) throw new Error(`Failed to load products: ${response.status}`);
         return await response.json();
     } catch (error) {
         console.error('Error loading products:', error);
@@ -74,10 +74,15 @@ async function loadProducts() {
 }
 
 // Featured Products
-// Featured Products
 async function generateFeaturedProducts() {
     const products = await loadProducts();
     const featuredContainer = document.getElementById('featured-products');
+
+    if (!products.length) {
+        console.warn('No products available to display.');
+        featuredContainer.innerHTML = '<p>Товары временно недоступны.</p>';
+        return;
+    }
 
     // Функция для случайного выбора n элементов из массива
     function getRandomItems(array, numItems) {
@@ -85,8 +90,8 @@ async function generateFeaturedProducts() {
         return shuffled.slice(0, numItems);
     }
 
-    // Выбираем 6 случайных товаров
-    const randomProducts = getRandomItems(products, 6);
+    // Выбираем до 6 случайных товаров
+    const randomProducts = getRandomItems(products, Math.min(6, products.length));
     
     featuredContainer.innerHTML = '';
     randomProducts.forEach(product => {
@@ -104,10 +109,11 @@ async function generateFeaturedProducts() {
         featuredContainer.appendChild(slide);
     });
 
+    // Инициализация Swiper
     const swiper = new Swiper('.featured-swiper', {
         slidesPerView: 1,
         spaceBetween: 20,
-        loop: true,
+        loop: randomProducts.length > 1, // Включаем loop только если товаров больше 1
         pagination: { el: '.swiper-pagination', clickable: true },
         navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
         breakpoints: {
@@ -119,25 +125,10 @@ async function generateFeaturedProducts() {
     addEventListenersToButtons(randomProducts);
 }
 
-    const swiper = new Swiper('.featured-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        pagination: { el: '.swiper-pagination', clickable: true },
-        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        breakpoints: {
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 }
-        }
-    });
-
-    addEventListenersToButtons(featuredProducts);
-}
-
 // Load Blog Posts
 async function loadBlogPosts() {
     try {
-        const response = await fetch('blog/posts.json'); // Предполагается JSON с постами
+        const response = await fetch('blog/posts.json');
         if (!response.ok) throw new Error('Failed to load blog posts');
         return await response.json();
     } catch (error) {
@@ -284,7 +275,7 @@ checkoutBtn.addEventListener('click', async () => {
         return;
     }
 
-    const products = await loadProducts();
+    const products = await loadCartProducts();
     let message = 'Заказ:\n';
     let totalPrice = 0;
 
@@ -365,6 +356,8 @@ updateCartCount();
 updateAllCartButtons();
 
 // GSAP Animations
+gsap.registerPlugin(ScrollTrigger); // Регистрируем ScrollTrigger
+
 gsap.from('.hero-content', {
     opacity: 0,
     y: 100,
@@ -382,7 +375,7 @@ gsap.from('.about-content > *', {
 });
 
 gsap.from('.charity-item', {
-    opacity: 1,
+    opacity: 0,
     scale: 0.9,
     stagger: 0.2,
     duration: 0.8,
