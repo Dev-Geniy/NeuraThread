@@ -74,17 +74,27 @@ async function loadProducts() {
 }
 
 // Featured Products
+// Featured Products
 async function generateFeaturedProducts() {
     const products = await loadProducts();
     const featuredContainer = document.getElementById('featured-products');
-    const featuredProducts = products.filter(p => p.featured).slice(0, 6); // Предполагается поле featured в JSON
+
+    // Функция для случайного выбора n элементов из массива
+    function getRandomItems(array, numItems) {
+        const shuffled = [...array].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, numItems);
+    }
+
+    // Выбираем 6 случайных товаров
+    const randomProducts = getRandomItems(products, 6);
+    
     featuredContainer.innerHTML = '';
-    featuredProducts.forEach(product => {
+    randomProducts.forEach(product => {
         const slide = document.createElement('div');
         slide.className = 'swiper-slide';
         slide.innerHTML = `
             <div class="product-card">
-                <img src="${product.images[0]}" alt="${product.name}">
+                <img src="${product.images[0] || 'https://via.placeholder.com/600x400?text=No+Image'}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>${product.price}</p>
                 <button class="add-to-cart-btn" data-product-id="${product.id}">Добавить в корзину</button>
@@ -93,6 +103,21 @@ async function generateFeaturedProducts() {
         `;
         featuredContainer.appendChild(slide);
     });
+
+    const swiper = new Swiper('.featured-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+        breakpoints: {
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 }
+        }
+    });
+
+    addEventListenersToButtons(randomProducts);
+}
 
     const swiper = new Swiper('.featured-swiper', {
         slidesPerView: 1,
