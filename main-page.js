@@ -1,17 +1,3 @@
-// Асинхронная загрузка товаров из JSON
-async function loadProducts() {
-    try {
-        const response = await fetch('products/products.json');
-        if (!response.ok) {
-            throw new Error('Failed to load products');
-        }
-        return await response.json();
-    } catch (error) {
-        console.error('Error loading products:', error);
-        return [];
-    }
-}
-
 // WebGL Background
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -20,7 +6,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 
 const geometry = new THREE.BufferGeometry();
 const vertices = [];
-for (let i = 0; i < 500; i++) {
+for (let i = 0; i < 1000; i++) {
     vertices.push(
         Math.random() * 200 - 100,
         Math.random() * 200 - 100,
@@ -28,14 +14,14 @@ for (let i = 0; i < 500; i++) {
     );
 }
 geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-const material = new THREE.PointsMaterial({ color: 0xA100FF, size: 0.4 });
+const material = new THREE.PointsMaterial({ color: 0xA100FF, size: 0.5 });
 const points = new THREE.Points(geometry, material);
 scene.add(points);
 camera.position.z = 100;
 
 function animate() {
     requestAnimationFrame(animate);
-    points.rotation.y += 0.001;
+    points.rotation.y += 0.002;
     renderer.render(scene, camera);
 }
 animate();
@@ -56,7 +42,7 @@ themeToggle.addEventListener('click', () => {
     currentThemeIndex = (currentThemeIndex + 1) % themes.length;
     document.body.className = themes[currentThemeIndex];
     material.color.setHex(colors[currentThemeIndex]);
-    gsap.to('.cta-button, .product-card, .section-title, .about-text', {
+    gsap.to('.product-card, .blog-card, .charity-item', {
         boxShadow: `0 0 25px ${['#A100FF', '#00FF99', '#FF3D3D'][currentThemeIndex]}`,
         duration: 0.5,
         ease: 'power2.out'
@@ -75,58 +61,82 @@ hamburger.addEventListener('click', () => {
     });
 });
 
-// Featured Products Carousel
+// Load Products
+async function loadProducts() {
+    try {
+        const response = await fetch('products/products.json');
+        if (!response.ok) throw new Error('Failed to load products');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading products:', error);
+        return [];
+    }
+}
+
+// Featured Products
 async function generateFeaturedProducts() {
     const products = await loadProducts();
     const featuredContainer = document.getElementById('featured-products');
-    // Выбираем первые 6 товаров для карусели
-    const featuredProducts = products.slice(0, 6);
-    
+    const featuredProducts = products.filter(p => p.featured).slice(0, 6); // Предполагается поле featured в JSON
+    featuredContainer.innerHTML = '';
     featuredProducts.forEach(product => {
         const slide = document.createElement('div');
-        slide.className = 'swiper-slide product-card';
-        slide.dataset.id = product.id;
+        slide.className = 'swiper-slide';
         slide.innerHTML = `
-            <img src="${product.images[0] || 'https://via.placeholder.com/600x400?text=' + product.name}" alt="${product.name}" loading="lazy">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <div class="btn-group">
-                <button class="add-to-cart-btn" data-product-id="${product.id}">+ В корзину!</button>
-                <a href="shop.html" class="details-btn">Подробно</a>
+            <div class="product-card">
+                <img src="${product.images[0]}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>${product.price}</p>
+                <button class="add-to-cart-btn" data-product-id="${product.id}">Добавить в корзину</button>
+                <button class="details-btn" data-product-id="${product.id}">Подробно</button>
             </div>
         `;
         featuredContainer.appendChild(slide);
     });
 
-    // Инициализация Swiper
-    new Swiper('.featured-swiper', {
+    const swiper = new Swiper('.featured-swiper', {
         slidesPerView: 1,
-        spaceBetween: 15,
+        spaceBetween: 20,
         loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-prev',
-            prevEl: '.swiper-button-next',
-        },
+        pagination: { el: '.swiper-pagination', clickable: true },
+        navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
         breakpoints: {
-            768: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            }
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 }
         }
     });
 
-    // Добавляем обработчики для кнопок корзины
-    addCartButtonListeners(products);
+    addEventListenersToButtons(featuredProducts);
 }
 
-// Вызываем генерацию карусели
-generateFeaturedProducts();
+// Load Blog Posts
+async function loadBlogPosts() {
+    try {
+        const response = await fetch('blog/posts.json'); // Предполагается JSON с постами
+        if (!response.ok) throw new Error('Failed to load blog posts');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading blog posts:', error);
+        return [];
+    }
+}
+
+async function generateBlogPosts() {
+    const posts = await loadBlogPosts();
+    const blogContainer = document.getElementById('blog-posts');
+    const recentPosts = posts.slice(0, 3);
+    blogContainer.innerHTML = '';
+    recentPosts.forEach(post => {
+        const card = document.createElement('div');
+        card.className = 'blog-card';
+        card.innerHTML = `
+            <img src="${post.image}" alt="${post.title}">
+            <h3>${post.title}</h3>
+            <p>${post.excerpt}</p>
+        `;
+        blogContainer.appendChild(card);
+    });
+}
 
 // Cart Logic
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -145,7 +155,7 @@ function updateCartButtonState(button, productId) {
         button.textContent = 'В корзине!';
     } else {
         button.classList.remove('in-cart');
-        button.textContent = '+ В корзину!';
+        button.textContent = 'Добавить в корзину!';
     }
 }
 
@@ -179,35 +189,6 @@ function removeFromCart(productId) {
     updateAllCartButtons();
 }
 
-async function addCartButtonListeners(products) {
-    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const productId = button.dataset.productId;
-            const product = products.find(p => p.id === productId);
-            if (!product) return;
-
-            const inCart = cart.find(item => item.id === productId);
-            if (inCart) {
-                removeFromCart(productId);
-            } else {
-                addToCart(product);
-            }
-
-            gsap.to(button, {
-                scale: 1.1,
-                duration: 0.2,
-                yoyo: true,
-                repeat: 1,
-                ease: 'power2.out'
-            });
-        });
-    });
-}
-
-// Инициализация корзины
-updateCartCount();
-updateAllCartButtons();
-
 // Cart Modal Logic
 const cartModal = document.querySelector('.cart-modal');
 const cartInfo = document.querySelector('.cart-info');
@@ -232,13 +213,12 @@ async function openCartModal() {
         cartItem.innerHTML = `
             <span>${item.name}</span>
             <span>Цена: ${item.price} x ${item.quantity}</span>
-            <button class="remove-from-cart" data-id="${item.id}">Не брать...</button>
+            <button class="remove-from-cart" data-id="${item.id}">Убрать</button>
         `;
         cartItemsContainer.appendChild(cartItem);
     });
 
     cartTotalPrice.textContent = `${totalPrice.toFixed(2)}$`;
-
     cartModal.classList.add('active');
     cartModal.style.display = 'block';
     gsap.fromTo('.cart-modal .modal-content', 
@@ -257,37 +237,25 @@ function closeCartModal() {
         onComplete: () => {
             cartModal.classList.remove('active');
             cartModal.style.display = 'none';
-            gsap.set('.cart-modal .modal-content', { clearProps: 'all' });
         }
     });
 }
 
-cartInfo.addEventListener('click', () => {
-    openCartModal();
-});
-
-cartModal.querySelector('.modal-close').addEventListener('click', () => {
-    closeCartModal();
-});
-
-cartModal.addEventListener('click', (e) => {
-    if (e.target === cartModal) {
-        closeCartModal();
-    }
-});
-
-cartModal.addEventListener('click', (e) => {
+cartInfo.addEventListener('click', openCartModal);
+cartModal.querySelector('.modal-close').addEventListener('click', closeCartModal);
+cartModal.addEventListener('click', e => {
+    if (e.target === cartModal) closeCartModal();
     if (e.target.classList.contains('remove-from-cart')) {
         const productId = e.target.dataset.id;
         removeFromCart(productId);
         openCartModal();
-    });
+    }
 });
 
-// Отправка заказа в Telegram-бота
+// Checkout
 checkoutBtn.addEventListener('click', async () => {
     if (cart.length === 0) {
-        alert('Ваша корзина пуста!');
+        alert('Корзина пуста!');
         return;
     }
 
@@ -298,10 +266,9 @@ checkoutBtn.addEventListener('click', async () => {
     cart.forEach(item => {
         const product = products.find(p => p.id === item.id);
         if (!product) return;
-
         const price = parseFloat(product.price.replace('$', '')) * item.quantity;
         totalPrice += price;
-        message += `Товар: ${item.name}, Цена: ${item.price}, Количество: ${item.quantity}\n`;
+        message += `Товар: ${item.name}, Цена: ${item.price}, Кол-во: ${item.quantity}\n`;
     });
 
     message += `Итого: ${totalPrice.toFixed(2)}$`;
@@ -312,67 +279,97 @@ checkoutBtn.addEventListener('click', async () => {
 
     fetch(url, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            chat_id: chatId,
-            text: message,
-        }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: chatId, text: message })
     })
     .then(response => response.json())
     .then(data => {
         if (data.ok) {
-            alert('Заказ успешно отправлен!');
+            alert('Заказ отправлен!');
             cart = [];
             updateCartCount();
             updateAllCartButtons();
             closeCartModal();
         } else {
-            alert('Ошибка при отправке заказа. Попробуйте снова.');
+            alert('Ошибка отправки заказа.');
         }
     })
     .catch(error => {
         console.error('Ошибка:', error);
-        alert('Произошла ошибка. Проверьте подключение к интернету.');
+        alert('Ошибка сети.');
     });
 });
+
+// Event Listeners for Product Buttons
+function addEventListenersToButtons(products) {
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const productId = button.dataset.productId;
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            const inCart = cart.find(item => item.id === productId);
+            if (inCart) {
+                removeFromCart(productId);
+            } else {
+                addToCart(product);
+            }
+
+            gsap.to(button, {
+                scale: 1.1,
+                duration: 0.2,
+                yoyo: true,
+                repeat: 1,
+                ease: 'power2.out'
+            });
+        });
+    });
+
+    document.querySelectorAll('.details-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const productId = button.dataset.productId;
+            window.location.href = `shop.html#product-${productId}`;
+        });
+    });
+}
+
+// Initialize
+generateFeaturedProducts();
+generateBlogPosts();
+updateCartCount();
+updateAllCartButtons();
 
 // GSAP Animations
 gsap.from('.hero-content', {
     opacity: 0,
-    y: 50,
+    y: 100,
     duration: 1,
-    ease: 'power2.out',
-    delay: 0.5
+    ease: 'power2.out'
 });
 
-gsap.from('.about', {
+gsap.from('.about-content > *', {
     opacity: 0,
     y: 50,
-    duration: 1,
+    stagger: 0.2,
+    duration: 0.8,
     ease: 'power2.out',
-    scrollTrigger: {
-        trigger: '.about',
-        start: 'top 80%'
-    }
+    scrollTrigger: { trigger: '.about', start: 'top 80%' }
 });
 
-gsap.from('.featured-products .product-card', {
+gsap.from('.charity-item', {
+    opacity: 1,
+    scale: 0.9,
+    stagger: 0.2,
+    duration: 0.8,
+    ease: 'power2.out',
+    scrollTrigger: { trigger: '.charity', start: 'top 80%' }
+});
+
+gsap.from('.blog-card', {
     opacity: 0,
-    y: 20,
-    duration: 0.5,
+    y: 50,
+    stagger: 0.2,
+    duration: 0.8,
     ease: 'power2.out',
-    stagger: 0.1,
-    scrollTrigger: {
-        trigger: '.featured-products',
-        start: 'top 80%'
-    }
-});
-
-// Убираем анимацию прозрачности для дочерних элементов карточек
-document.querySelectorAll('.product-card h3, .product-card p, .product-card .btn-group').forEach(el => {
-    el.style.opacity = '1';
-    el.style.display = 'block';
-    el.style.visibility = 'visible';
+    scrollTrigger: { trigger: '.blog-teaser', start: 'top 80%' }
 });
