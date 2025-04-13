@@ -1,0 +1,227 @@
+[
+    {
+        "id": "shirt-z3",
+        "name": "NeuraShirt Z3",
+        "description": "T-shirt with holographic effect, breathable fabric, perfect for everyday style.",
+        "price": "49$",
+        "category": "tshirts-nt",
+        "images": [""],
+        "sizes": ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+    {
+        "id": "hoodie-nt-1",
+        "name": "NeuraHoodie V1",
+        "description": "Hoodie with thermoregulation, ideal for cool weather, unisex for men and women.",
+        "price": "129$",
+        "category": "hoodies-nt",
+        "images": ["https://via.placeholder.com/600x400?text=NeuraHoodie"],
+        "sizes": ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+    {
+        "id": "sweatshirt-nt-1",
+        "name": "NeuraSweatshirt X1",
+        "description": "Sweatshirt with minimalist design, soft and warm, unisex for men and women.",
+        "price": "109$",
+        "category": "sweatshirts-nt",
+        "images": ["https://via.placeholder.com/600x400?text=NeuraSweatshirt"],
+        "sizes": ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+    {
+        "id": "snapback-0",
+        "name": "Snapback 'ILoveYou & FuckYou'",
+        "description": "Bold snapback for those who live on the edge of emotions. The contrasting provocative print reflects the duality of feelings — love and rebellion in one. Made from premium cotton with a breathable structure, perfect for street vibes and daring outings. Adjustable closure ensures a universal fit for any head size. Unisex design highlights your individuality.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/FL5C0Q7m/2025-04-12-234941.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-1",
+        "name": "Snapback 'Kopibara'",
+        "description": "Chill snapback with capybara vibes — for those who value comfort and relaxed style. The original print is inspired by meme culture and natural tranquility. Lightweight cotton with ventilated inserts ensures comfort in the heat. Universal size with adjustable closure fits any head. Unisex model, ideal for urban adventures and casual hangouts.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/mVk3XgWg/2025-04-12-221604.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-2",
+        "name": "Snapback 'Fuck'",
+        "description": "Snapback for rebels who speak their mind. The minimalist yet bold print screams freedom of expression. Durable cotton with a matte finish and reinforced visor is built for active street life. Adjustable closure guarantees a perfect fit for any head. Unisex design adds edge to your look.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/KxgB8dxv/2025-04-12-234453.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-3",
+        "name": "Snapback 'Sweet & Evil'",
+        "description": "Snapback balancing angelic tenderness and devilish daring. The neon print glows in the dark, creating a striking contrast on a black base. High-quality cotton with moisture-wicking technology ensures comfort in any weather. Universal size with adjustable closure fits everyone. Unisex model for those who play with contrasts.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/0y2Vhx3W/2025-04-12-233158.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-4",
+        "name": "Snapback 'No Limit'",
+        "description": "Snapback for those who don’t acknowledge boundaries. The cyberpunk print with futuristic lines charges with the energy of freedom. Durable cotton with a light texture and flat visor is designed for street vibes. Adjustable closure ensures a universal fit. Unisex design, perfect for those who always go all in.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/RkMYdYMM/2025-04-12-233521.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-5",
+        "name": "Snapback 'Gold Hunter'",
+        "description": "Snapback for treasure and star seekers. The golden print with galactic shine transforms this cap into a true style artifact. Lightweight cotton with soft lining and ventilated inserts provides all-day comfort. Universal size with adjustable closure fits any head. Unisex model for those chasing dreams.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/3LYZqNB/2025-04-12-230337.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-6",
+        "name": "Snapback 'Financial Kiss'",
+        "description": "Snapback for those who kiss luck and play big. The print with money vibes and vibrant accents screams luxury and ambition. Dense cotton with a reinforced visor ensures durability, while the breathable structure offers comfort. Adjustable closure for a universal fit. Unisex design for financial rock stars.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/hxBjvSyq/2025-04-12-225337.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-7",
+        "name": "Snapback 'Mining Maker'",
+        "description": "Snapback for digital alchemists shaping the future. The dark print with cybernetic patterns reflects the spirit of those who create value from nothing. High-quality cotton with a matte texture and sturdy construction is ideal for late-night sessions. Universal size with adjustable closure fits all. Unisex model for visionaries.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/B2t3S2zD/2025-04-12-221911.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-8",
+        "name": "Snapback 'Do It'",
+        "description": "Snapback for those who don’t wait — they act. The energetic print motivates you to move forward without looking back. Lightweight cotton with ventilated panels and a flat visor is built for an active lifestyle. Adjustable closure ensures a perfect fit. Unisex design inspiring achievements.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/23tfFycm/2025-04-12-234602.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-9",
+        "name": "Snapback 'Think and Grow Rich'",
+        "description": "Snapback for minds that think big. The print is inspired by the philosophy of success and financial freedom. Durable cotton with soft lining and a reinforced visor offers comfort and style. Universal size with adjustable closure fits any head. Unisex model for those building their wealth.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/xdNs4sS/2025-04-13-021508.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-10",
+        "name": "Snapback 'Crime Boss'",
+        "description": "Snapback for those who set their own rules. The dark print with a criminal vibe adds danger and charisma to your look. High-quality cotton with moisture-wicking structure and a flat visor is made for street bosses. Adjustable closure for a universal fit. Unisex design that keeps everything under control.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/0y4bX1BV/2025-04-13-031058.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-11",
+        "name": "Snapback 'Ruby Paradise'",
+        "description": "Snapback that transports you to a world of luxury and passion. The vibrant ruby print shines like a gemstone on a black base. Lightweight cotton with breathable inserts and soft lining offers comfort in any situation. Universal size with adjustable closure fits all. Unisex model for those living in their paradise.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/SDLkYbyc/2025-04-13-025210.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-12",
+        "name": "Snapback 'There Is Money'",
+        "description": "Snapback for those who sense money from a mile away. The print with monetary energy charges you for success and prosperity. Dense cotton with a reinforced structure and ventilated panels is built for long urban raids. Adjustable closure for a perfect fit. Unisex design attracting wealth.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/3mmjMThL/2025-04-13-030556.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-13",
+        "name": "Snapback 'Predatory Lion'",
+        "description": "Snapback for true street predators. The print with a regal lion radiates strength and confidence. Durable cotton with a matte finish and flat visor is ready for any challenge. Universal size with adjustable closure fits any head. Unisex model for those who rule the jungle.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/35RyDcqH/2025-04-13-025558.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-14",
+        "name": "Snapback 'Dude'",
+        "description": "Snapback for those who live at their own pace. The concise print with vibes of freedom and camaraderie. Lightweight cotton with a breathable structure and soft lining is ideal for long walks. Adjustable closure ensures a universal fit. Unisex design for dudes and dudettes who know style.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/MDgjYYc7/2025-04-13-021254.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-15",
+        "name": "Snapback 'Sex & Money'",
+        "description": "Snapback for those who play big in life and love. The provocative print is charged with passion and ambition. Dense cotton with moisture-wicking technology and a reinforced visor is made for bold outings. Universal size with adjustable closure fits all. Unisex model for attention magnets.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/rf6nh4bc/2025-04-13-020246.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-16",
+        "name": "Snapback 'Street'",
+        "description": "Snapback born for asphalt jungles. The street print with raw energy reflects the spirit of freedom and independence. Durable cotton with ventilated inserts and a flat visor is perfect for urban adventures. Adjustable closure for any head. Unisex design for kings and queens of the streets.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/7xWYMrd2/2025-04-13-015642.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-17",
+        "name": "Snapback 'Love'",
+        "description": "Snapback dedicated to the world’s greatest feeling. The tender yet bold print speaks of love without words. Lightweight cotton with a soft texture and breathable panels ensures comfort in any situation. Universal size with adjustable closure fits all. Unisex model for romantics with character.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/DjC8K42/2025-04-13-015215.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-18",
+        "name": "Snapback 'Female Trap'",
+        "description": "Snapback for those who set the rhythm in the trap world. The print with feminine energy and street daring grabs attention. Dense cotton with a reinforced structure and moisture-wicking technology is ready for late-night parties. Adjustable closure for a universal fit. Unisex design that breaks stereotypes.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/vvsmQfns/2025-04-13-021810.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-19",
+        "name": "Snapback 'Gangster'",
+        "description": "Snapback for those who live by the street code. The print with gangster vibes adds toughness and charm to your look. Durable cotton with a matte finish and flat visor is built for long raids. Universal size with adjustable closure fits all. Unisex model for true legends.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/mVkHKTwG/2025-04-13-014550.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-20",
+        "name": "Snapback 'Monopolyst'",
+        "description": "Snapback for those who play life like a monopoly. The print with business flair and a hint of power grabs attention at first glance. Lightweight cotton with a breathable structure and reinforced visor is ideal for urban strategists. Adjustable closure for any head. Unisex design for winners.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/vvCVVZwF/2025-04-13-031821.png"],
+        "sizes": ["One Size"]
+    },
+    {
+        "id": "snapback-21",
+        "name": "Snapback 'NeuraThread'",
+        "description": "Signature snapback from NeuraThread — the embodiment of branded futurism. The minimalist logo print radiates style and confidence. High-quality cotton with ventilated panels and soft lining is designed for 24/7 comfort. Universal size with adjustable closure fits all. Unisex model for those living in the rhythm of the future.",
+        "price": "49$",
+        "category": "caps-nt",
+        "images": ["https://i.ibb.co/939wbM4c/1.png"],
+        "sizes": ["One Size"]
+    }
+]
