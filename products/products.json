@@ -1,227 +1,379 @@
 [
+    // ФУТБОЛКИ -NT-
     {
-        "id": "shirt-z3",
-        "name": "NeuraShirt Z3",
-        "description": "T-shirt with holographic effect, breathable fabric, perfect for everyday style.",
-        "price": "49$",
-        "category": "tshirts-nt",
-        "images": [""],
-        "sizes": ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+        id: "shirt-x0",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/mFy60VGP/2025-04-13-090823.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png"
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+        {
+        id: "shirt-x1",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/7NJgsxJw/2025-04-13-083845.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png"
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+        {
+        id: "shirt-x2",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/0pZ0gtm6/2025-04-13-084355.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png"
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+      {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/mrLyqcCF/2025-04-13-083450.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png"
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+          {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/NnGLzf0m/2025-04-13-085622.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+              {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/3m8qPXpQ/2025-04-13-090724.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+  
+  
+  
+  
+              {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/bMN9WJdB/2025-04-13-084805.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+              {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/qMKJZf7M/2025-04-13-085820.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+                  {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/8L0zLmNq/2025-04-13-090449.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+                  {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/8L6HM1YZ/2025-04-13-085727.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+                    {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/fVDmrr8b/2025-04-13-090542.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+                    {
+        id: "shirt-x3",
+        name: 'Футболка "NeuraThread"',
+        description: "Футболка с голографическим эффектом, дышащая ткань, идеальна для повседневного стиля.",
+        price: "49$",
+        category: "tshirts-nt",
+        images: [
+                 "https://i.ibb.co/zhQgdSM5/2025-04-13-083951.png",
+                 "https://i.ibb.co/yBYmnMZD/2025-04-13-083530.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+
+    // ХУДИ -NT-
+    {
+        id: "hoodie-nt-1",
+        name: 'Худи с начёсом "Hoodie v1"',
+        description: "Худи с терморегуляцией, идеально для прохладной погоды, man/girl unisex",
+        price: "129$",
+        category: "hoodies-nt",
+        images: [
+                 "https://i.ibb.co/WNyG4yWT/2025-04-13-100708.png",
+                 "https://i.ibb.co/TBFmmh9j/2025-04-13-100750.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+
+    //СВИТШОТЫ -NT-
+    {
+        id: "sweatshirt-nt-1",
+        name: "NeuraSweatshirt X1",
+        description: "Свитшот с минималистичным дизайном, мягкий и тёплый, man/girl unisex",
+        price: "109$",
+        category: "sweatshirts-nt",
+        images: [
+                 "https://i.ibb.co/YB6Tzrqs/2025-04-13-101521.png",
+                 "https://i.ibb.co/HDXcyMCL/2025-04-13-101553.png",
+                ],
+        sizes: ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+    },
+  
+    //КЕПКИ, ТРАКЕРЫ, СНЕПБЕКИ, ШАПКИ -NT-
+    {
+        id: "snapback-0",
+        name: 'Snapback "IloveYou & FuckYou"',
+        description: "Дерзкий снепбек для тех, кто живёт на грани эмоций. Контрастный принт с провокационной надписью отражает двойственность чувств — любовь и бунт в одном флаконе. Изготовлен из премиального хлопка с дышащей структурой, идеален для уличных тусовок и смелых выходов. Регулируемая застёжка обеспечивает универсальную посадку для любого обхвата головы. Unisex-дизайн подчёркивает твою индивидуальность.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/FL5C0Q7m/2025-04-12-234941.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "hoodie-nt-1",
-        "name": "NeuraHoodie V1",
-        "description": "Hoodie with thermoregulation, ideal for cool weather, unisex for men and women.",
-        "price": "129$",
-        "category": "hoodies-nt",
-        "images": ["https://via.placeholder.com/600x400?text=NeuraHoodie"],
-        "sizes": ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+        id: "snapback-1",
+        name: 'Snapback "Kopibara"',
+        description: "Чилловый снепбек с вайбом капибары — для тех, кто ценит уют и расслабленный стиль. Оригинальный принт вдохновлён мемной культурой и природной безмятежностью. Лёгкий хлопковый материал с вентилируемыми вставками обеспечивает комфорт в жару. Универсальный размер с регулируемой застёжкой подходит для любой головы. Unisex-модель, идеальная для городских приключений и дружеских посиделок.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/mVk3XgWg/2025-04-12-221604.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "sweatshirt-nt-1",
-        "name": "NeuraSweatshirt X1",
-        "description": "Sweatshirt with minimalist design, soft and warm, unisex for men and women.",
-        "price": "109$",
-        "category": "sweatshirts-nt",
-        "images": ["https://via.placeholder.com/600x400?text=NeuraSweatshirt"],
-        "sizes": ["S", "M", "L", "XL", "XS", "XXS", "XXL", "3XL"]
+        id: "snapback-2",
+        name: 'Snapback "Fuck"',
+        description: "Снепбек для бунтарей, которые говорят, что думают. Минималистичный, но выразительный принт кричит о свободе самовыражения. Прочный хлопок с матовой отделкой и усиленная конструкция козырька созданы для активной уличной жизни. Регулируемая застёжка гарантирует идеальную посадку на любой голове. Unisex-дизайн, который добавит остроты твоему образу.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/KxgB8dxv/2025-04-12-234453.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-0",
-        "name": "Snapback 'ILoveYou & FuckYou'",
-        "description": "Bold snapback for those who live on the edge of emotions. The contrasting provocative print reflects the duality of feelings — love and rebellion in one. Made from premium cotton with a breathable structure, perfect for street vibes and daring outings. Adjustable closure ensures a universal fit for any head size. Unisex design highlights your individuality.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/FL5C0Q7m/2025-04-12-234941.png"],
-        "sizes": ["One Size"]
+        id: "snapback-3",
+        name: 'Snapback "Sweet & Evil"',
+        description: "Снепбек, балансирующий между ангельской нежностью и дьявольской дерзостью. Неоновый принт светится в темноте, создавая эффектный контраст на чёрной основе. Высококачественный хлопок с влагоотводящей технологией обеспечивает комфорт в любую погоду. Универсальный размер с регулировкой подходит всем. Unisex-модель для тех, кто любит играть с противоположностями.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/0y2Vhx3W/2025-04-12-233158.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-1",
-        "name": "Snapback 'Kopibara'",
-        "description": "Chill snapback with capybara vibes — for those who value comfort and relaxed style. The original print is inspired by meme culture and natural tranquility. Lightweight cotton with ventilated inserts ensures comfort in the heat. Universal size with adjustable closure fits any head. Unisex model, ideal for urban adventures and casual hangouts.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/mVk3XgWg/2025-04-12-221604.png"],
-        "sizes": ["One Size"]
+        id: "snapback-4",
+        name: 'Snapback "No Limit"',
+        description: "Снепбек для тех, кто не признаёт границ. Кибер-панк принт с футуристическими линиями заряжает энергией свободы. Прочный хлопковый материал с лёгкой текстурой и плоский козырёк созданы для уличного вайба. Регулируемая застёжка обеспечивает универсальную посадку. Unisex-дизайн, идеальный для тех, кто всегда идёт до конца.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/RkMYdYMM/2025-04-12-233521.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-2",
-        "name": "Snapback 'Fuck'",
-        "description": "Snapback for rebels who speak their mind. The minimalist yet bold print screams freedom of expression. Durable cotton with a matte finish and reinforced visor is built for active street life. Adjustable closure guarantees a perfect fit for any head. Unisex design adds edge to your look.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/KxgB8dxv/2025-04-12-234453.png"],
-        "sizes": ["One Size"]
+        id: "snapback-5",
+        name: 'Snapback "Gold Hunter"',
+        description: "Снепбек для искателей сокровищ и звёзд. Золотистый принт с галактическим сиянием превращает эту кепку в настоящий артефакт стиля. Лёгкий хлопок с мягкой подкладкой и вентилируемыми вставками дарит комфорт на весь день. Универсальный размер с регулировкой подходит для любого обхвата головы. Unisex-модель для тех, кто охотится за мечтами.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/3LYZqNB/2025-04-12-230337.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-3",
-        "name": "Snapback 'Sweet & Evil'",
-        "description": "Snapback balancing angelic tenderness and devilish daring. The neon print glows in the dark, creating a striking contrast on a black base. High-quality cotton with moisture-wicking technology ensures comfort in any weather. Universal size with adjustable closure fits everyone. Unisex model for those who play with contrasts.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/0y2Vhx3W/2025-04-12-233158.png"],
-        "sizes": ["One Size"]
+        id: "snapback-6",
+        name: 'Snapback "Financial kiss"',
+        description: "Снепбек для тех, кто целует удачу и играет по-крупному. Принт с денежным вайбом и яркими акцентами кричит о роскоши и амбициях. Плотный хлопок с усиленным козырьком обеспечивает долговечность, а дышащая структура — комфорт. Регулируемая застёжка для универсальной посадки. Unisex-дизайн, созданный для финансовых рок-звёзд.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/hxBjvSyq/2025-04-12-225337.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-4",
-        "name": "Snapback 'No Limit'",
-        "description": "Snapback for those who don’t acknowledge boundaries. The cyberpunk print with futuristic lines charges with the energy of freedom. Durable cotton with a light texture and flat visor is designed for street vibes. Adjustable closure ensures a universal fit. Unisex design, perfect for those who always go all in.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/RkMYdYMM/2025-04-12-233521.png"],
-        "sizes": ["One Size"]
+        id: "snapback-7",
+        name: 'Snapback "Mining Maker"',
+        description: "Снепбек для цифровых алхимиков, добывающих будущее. Тёмный принт с кибернетическими узорами отражает дух тех, кто создаёт ценности из ничего. Высококачественный хлопок с матовой текстурой и прочной конструкцией идеален для ночных сессий. Универсальный размер с регулировкой подходит всем. Unisex-модель для визионеров.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/B2t3S2zD/2025-04-12-221911.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-5",
-        "name": "Snapback 'Gold Hunter'",
-        "description": "Snapback for treasure and star seekers. The golden print with galactic shine transforms this cap into a true style artifact. Lightweight cotton with soft lining and ventilated inserts provides all-day comfort. Universal size with adjustable closure fits any head. Unisex model for those chasing dreams.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/3LYZqNB/2025-04-12-230337.png"],
-        "sizes": ["One Size"]
+        id: "snapback-8",
+        name: 'Snapback "Do It"',
+        description: "Снепбек для тех, кто не ждёт — действует. Энергичный принт мотивирует двигаться вперёд без оглядки. Лёгкий хлопковый материал с вентилируемыми панелями и плоским козырьком создан для активного образа жизни. Регулируемая застёжка обеспечивает идеальную посадку. Unisex-дизайн, вдохновляющий на свершения.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/23tfFycm/2025-04-12-234602.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-6",
-        "name": "Snapback 'Financial Kiss'",
-        "description": "Snapback for those who kiss luck and play big. The print with money vibes and vibrant accents screams luxury and ambition. Dense cotton with a reinforced visor ensures durability, while the breathable structure offers comfort. Adjustable closure for a universal fit. Unisex design for financial rock stars.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/hxBjvSyq/2025-04-12-225337.png"],
-        "sizes": ["One Size"]
+        id: "snapback-9",
+        name: 'Snapback "think and grow rich"',
+        description: "Снепбек для умов, которые мыслят масштабно. Принт вдохновлён философией успеха и финансовой свободы. Прочный хлопок с мягкой подкладкой и усиленным козырьком обеспечивает комфорт и стиль. Универсальный размер с регулируемой застёжкой подходит для любой головы. Unisex-модель для тех, кто строит своё богатство.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/xdNs4sS/2025-04-13-021508.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-7",
-        "name": "Snapback 'Mining Maker'",
-        "description": "Snapback for digital alchemists shaping the future. The dark print with cybernetic patterns reflects the spirit of those who create value from nothing. High-quality cotton with a matte texture and sturdy construction is ideal for late-night sessions. Universal size with adjustable closure fits all. Unisex model for visionaries.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/B2t3S2zD/2025-04-12-221911.png"],
-        "sizes": ["One Size"]
+        id: "snapback-10",
+        name: 'Snapback "Crime Boss"',
+        description: "Снепбек для тех, кто устанавливает свои правила. Тёмный принт с криминальным вайбом добавляет образу опасности и харизмы. Высококачественный хлопок с влагоотводящей структурой и плоским козырьком создан для уличных боссов. Регулируемая застёжка для универсальной посадки. Unisex-дизайн, который держит всё под контролем.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/0y4bX1BV/2025-04-13-031058.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-8",
-        "name": "Snapback 'Do It'",
-        "description": "Snapback for those who don’t wait — they act. The energetic print motivates you to move forward without looking back. Lightweight cotton with ventilated panels and a flat visor is built for an active lifestyle. Adjustable closure ensures a perfect fit. Unisex design inspiring achievements.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/23tfFycm/2025-04-12-234602.png"],
-        "sizes": ["One Size"]
+        id: "snapback-11",
+        name: 'Snapback "Ruby Paradise"',
+        description: "Снепбек, переносящий в мир роскоши и страсти. Яркий рубиновый принт сияет, как драгоценный камень, на чёрной основе. Лёгкий хлопок с дышащими вставками и мягкой подкладкой дарит комфорт в любой ситуации. Универсальный размер с регулировкой подходит всем. Unisex-модель для тех, кто живёт в своём раю.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/SDLkYbyc/2025-04-13-025210.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-9",
-        "name": "Snapback 'Think and Grow Rich'",
-        "description": "Snapback for minds that think big. The print is inspired by the philosophy of success and financial freedom. Durable cotton with soft lining and a reinforced visor offers comfort and style. Universal size with adjustable closure fits any head. Unisex model for those building their wealth.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/xdNs4sS/2025-04-13-021508.png"],
-        "sizes": ["One Size"]
+        id: "snapback-12",
+        name: 'Snapback "There is money"',
+        description: "Снепбек для тех, кто чует деньги за милю. Принт с денежной энергией заряжает на успех и процветание. Плотный хлопок с усиленной конструкцией и вентилируемыми панелями создан для долгих городских рейдов. Регулируемая застёжка для идеальной посадки. Unisex-дизайн, притягивающий богатство.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/3mmjMThL/2025-04-13-030556.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-10",
-        "name": "Snapback 'Crime Boss'",
-        "description": "Snapback for those who set their own rules. The dark print with a criminal vibe adds danger and charisma to your look. High-quality cotton with moisture-wicking structure and a flat visor is made for street bosses. Adjustable closure for a universal fit. Unisex design that keeps everything under control.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/0y4bX1BV/2025-04-13-031058.png"],
-        "sizes": ["One Size"]
+        id: "snapback-13",
+        name: 'Snapback "Predatory Lion"',
+        description: "Снепбек для настоящих хищников улиц. Принт с царственным львом излучает силу и уверенность. Прочный хлопок с матовой отделкой и плоским козырьком готов к любым испытаниям. Универсальный размер с регулируемой застёжкой подходит для любой головы. Unisex-модель для тех, кто правит джунглями.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/35RyDcqH/2025-04-13-025558.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-11",
-        "name": "Snapback 'Ruby Paradise'",
-        "description": "Snapback that transports you to a world of luxury and passion. The vibrant ruby print shines like a gemstone on a black base. Lightweight cotton with breathable inserts and soft lining offers comfort in any situation. Universal size with adjustable closure fits all. Unisex model for those living in their paradise.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/SDLkYbyc/2025-04-13-025210.png"],
-        "sizes": ["One Size"]
+        id: "snapback-14",
+        name: 'Snapback "Dude"',
+        description: "Снепбек для тех, кто живёт в своём ритме. Лаконичный принт с вайбом свободы и дружеского вайба. Лёгкий хлопок с дышащей структурой и мягкой подкладкой идеален для долгих прогулок. Регулируемая застёжка обеспечивает универсальную посадку. Unisex-дизайн для чуваков и чувих, которые знают толк в стиле.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/MDgjYYc7/2025-04-13-021254.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-12",
-        "name": "Snapback 'There Is Money'",
-        "description": "Snapback for those who sense money from a mile away. The print with monetary energy charges you for success and prosperity. Dense cotton with a reinforced structure and ventilated panels is built for long urban raids. Adjustable closure for a perfect fit. Unisex design attracting wealth.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/3mmjMThL/2025-04-13-030556.png"],
-        "sizes": ["One Size"]
+        id: "snapback-15",
+        name: 'Snapback "Sex & Money"',
+        description: "Снепбек для тех, кто играет по-крупному в жизни и любви. Провокационный принт заряжен энергией страсти и амбиций. Плотный хлопок с влагоотводящей технологией и усиленным козырьком создан для ярких выходов. Универсальный размер с регулировкой подходит всем. Unisex-модель для магнитов внимания.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/rf6nh4bc/2025-04-13-020246.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-13",
-        "name": "Snapback 'Predatory Lion'",
-        "description": "Snapback for true street predators. The print with a regal lion radiates strength and confidence. Durable cotton with a matte finish and flat visor is ready for any challenge. Universal size with adjustable closure fits any head. Unisex model for those who rule the jungle.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/35RyDcqH/2025-04-13-025558.png"],
-        "sizes": ["One Size"]
+        id: "snapback-16",
+        name: 'Snapback "Street"',
+        description: "Снепбек, рождённый для асфальтовых джунглей. Уличный принт с грубой энергией отражает дух свободы и независимости. Прочный хлопок с вентилируемыми вставками и плоским козырьком идеален для городских приключений. Регулируемая застёжка для любой головы. Unisex-дизайн для королей и королев улиц.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/7xWYMrd2/2025-04-13-015642.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-14",
-        "name": "Snapback 'Dude'",
-        "description": "Snapback for those who live at their own pace. The concise print with vibes of freedom and camaraderie. Lightweight cotton with a breathable structure and soft lining is ideal for long walks. Adjustable closure ensures a universal fit. Unisex design for dudes and dudettes who know style.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/MDgjYYc7/2025-04-13-021254.png"],
-        "sizes": ["One Size"]
+        id: "snapback-17",
+        name: 'Snapback "Love"',
+        description: "Снепбек, посвящённый главному чувству мира. Нежный, но смелый принт говорит о любви без слов. Лёгкий хлопок с мягкой текстурой и дышащими панелями обеспечивает комфорт в любой ситуации. Универсальный размер с регулируемой застёжкой подходит всем. Unisex-модель для романтиков с характером.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/DjC8K42/2025-04-13-015215.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-15",
-        "name": "Snapback 'Sex & Money'",
-        "description": "Snapback for those who play big in life and love. The provocative print is charged with passion and ambition. Dense cotton with moisture-wicking technology and a reinforced visor is made for bold outings. Universal size with adjustable closure fits all. Unisex model for attention magnets.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/rf6nh4bc/2025-04-13-020246.png"],
-        "sizes": ["One Size"]
+        id: "snapback-18",
+        name: 'Snapback "Female Trap"',
+        description: "Снепбек для тех, кто задаёт ритм в мире трапа. Принт с женской энергией и уличной дерзостью цепляет взгляды. Плотный хлопок с усиленной конструкцией и влагоотводящей технологией готов к ночным тусовкам. Регулируемая застёжка для универсальной посадки. Unisex-дизайн, который ломает стереотипы.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/vvsmQfns/2025-04-13-021810.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-16",
-        "name": "Snapback 'Street'",
-        "description": "Snapback born for asphalt jungles. The street print with raw energy reflects the spirit of freedom and independence. Durable cotton with ventilated inserts and a flat visor is perfect for urban adventures. Adjustable closure for any head. Unisex design for kings and queens of the streets.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/7xWYMrd2/2025-04-13-015642.png"],
-        "sizes": ["One Size"]
+        id: "snapback-19",
+        name: 'Snapback "Gangster"',
+        description: "Снепбек для тех, кто живёт по кодексу улиц. Принт с гангстерским вайбом добавляет образу жёсткости и шарма. Прочный хлопок с матовой отделкой и плоским козырьком создан для долгих рейдов. Универсальный размер с регулировкой подходит всем. Unisex-модель для настоящих легенд.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/mVkHKTwG/2025-04-13-014550.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-17",
-        "name": "Snapback 'Love'",
-        "description": "Snapback dedicated to the world’s greatest feeling. The tender yet bold print speaks of love without words. Lightweight cotton with a soft texture and breathable panels ensures comfort in any situation. Universal size with adjustable closure fits all. Unisex model for romantics with character.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/DjC8K42/2025-04-13-015215.png"],
-        "sizes": ["One Size"]
+        id: "snapback-20",
+        name: 'Snapback "Monopolyst"',
+        description: "Снепбек для тех, кто играет в жизнь, как в монополию. Принт с деловым шиком и намёком на власть цепляет с первого взгляда. Лёгкий хлопок с дышащей структурой и усиленным козырьком идеален для городских стратегов. Регулируемая застёжка для любой головы. Unisex-дизайн для победителей.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/vvCVVZwF/2025-04-13-031821.png"],
+        sizes: ["One Size"]
     },
     {
-        "id": "snapback-18",
-        "name": "Snapback 'Female Trap'",
-        "description": "Snapback for those who set the rhythm in the trap world. The print with feminine energy and street daring grabs attention. Dense cotton with a reinforced structure and moisture-wicking technology is ready for late-night parties. Adjustable closure for a universal fit. Unisex design that breaks stereotypes.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/vvsmQfns/2025-04-13-021810.png"],
-        "sizes": ["One Size"]
-    },
-    {
-        "id": "snapback-19",
-        "name": "Snapback 'Gangster'",
-        "description": "Snapback for those who live by the street code. The print with gangster vibes adds toughness and charm to your look. Durable cotton with a matte finish and flat visor is built for long raids. Universal size with adjustable closure fits all. Unisex model for true legends.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/mVkHKTwG/2025-04-13-014550.png"],
-        "sizes": ["One Size"]
-    },
-    {
-        "id": "snapback-20",
-        "name": "Snapback 'Monopolyst'",
-        "description": "Snapback for those who play life like a monopoly. The print with business flair and a hint of power grabs attention at first glance. Lightweight cotton with a breathable structure and reinforced visor is ideal for urban strategists. Adjustable closure for any head. Unisex design for winners.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/vvCVVZwF/2025-04-13-031821.png"],
-        "sizes": ["One Size"]
-    },
-    {
-        "id": "snapback-21",
-        "name": "Snapback 'NeuraThread'",
-        "description": "Signature snapback from NeuraThread — the embodiment of branded futurism. The minimalist logo print radiates style and confidence. High-quality cotton with ventilated panels and soft lining is designed for 24/7 comfort. Universal size with adjustable closure fits all. Unisex model for those living in the rhythm of the future.",
-        "price": "49$",
-        "category": "caps-nt",
-        "images": ["https://i.ibb.co/939wbM4c/1.png"],
-        "sizes": ["One Size"]
+        id: "snapback-21",
+        name: 'Snapback "NeuraThread"',
+        description: "Фирменный снепбек от NeuraThread — воплощение брендового футуризма. Минималистичный принт с логотипом излучает стиль и уверенность. Высококачественный хлопок с вентилируемыми панелями и мягкой подкладкой создан для комфорта 24/7. Универсальный размер с регулируемой застёжкой подходит всем. Unisex-модель для тех, кто живёт в ритме будущего.",
+        price: "49$",
+        category: "caps-nt",
+        images: ["https://i.ibb.co/939wbM4c/1.png"],
+        sizes: ["One Size"]
     }
 ]
